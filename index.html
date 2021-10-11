@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Timer-Mobile</title>
+    <title>Mental Math</title>
     <link rel="stylesheet" href="lib/CSS/style.css">
     <link rel="stylesheet" href="lib/CSS/jquery.mobile-1.4.5.min.css">
     <script src="lib/JS/jquery.min.js"></script>
@@ -12,6 +12,52 @@
     <script src="lib/JS/app.js"></script>
 </head>
 <body>
+    <!-- Home -->
+    <div data-role="page" id="p1">
+        <div data-role="header">
+            <h1>Mental Math</h1>
+        </div>
+
+        <div data-role="content">
+            <h1 id="calculus">Addieren</h1>
+
+
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#" data-icon="grid" class="ui-btn-active uistate-perist">Home</a></li>
+                    <li><a href="#p2" data-icon="star" data-transition="flip">Highscore</a></li>
+                    <li><a href="#p3" data-icon="gear">Einstellungen</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Seite 2 -- Highscore -->
+        <div data-role="page" id="p2">
+            <div data-role="header">
+                <h1>Mental Math</h1>
+            </div>
     
+            <div data-role="content">
+                <h1 id="calculus">Highscore</h1>
+    
+    
+            </div>
+    
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#p1" data-icon="grid">Home</a></li>
+                        <li><a href="#" data-icon="star" class="ui-btn-active uistate-perist">Highscore</a></li>
+                        <li><a href="#p3" data-icon="gear">Einstellungen</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 </body>
 </html>
