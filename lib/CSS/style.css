@@ -1,11 +1,12 @@
 #calculus{
     text-align: center;
-    color: blue;
+    color: white;
 }
 
 #task{
     text-align: center;
     font-size: 64px;
+    color: yellow;
 }
 
 #number-pattern{
@@ -22,3 +23,23 @@
     text-align: center;
 }
 
+
+#txtName{
+    text-align: center;
+}
+
+#btnStart{
+    background-color: coral;
+}
+
+
+#btnCheck{
+    background-color: orange;
+}
+
+#btnNext{
+    background-color: rgb(212, 14, 14);
+    color: white;
+    letter-spacing: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

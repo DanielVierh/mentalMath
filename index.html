@@ -19,9 +19,9 @@
         </div>
 
         <div data-role="content">
-            <h1 id="calculus">Home</h1>
-            <br>
-            <a href="#p4" data-transition="flip" class="ui-btn ui-cornerall">Start</a>
+            <input type="text" placeholder="Dein Name..." id="txtName">
+            <button id="btnStart" onclick="gotoGame()">Start</button>
+            <!-- <a href="#p4" data-transition="flip" class="ui-btn ui-cornerall" id="btnStart">Start</a> -->
 
         </div>
 
@@ -87,20 +87,20 @@
         </div>
 
 
-        <div data-role="page" id="p4">
+        <!-- Seite 4 -->
+        <div data-role="page" id="p4" data-theme="b">
             <div data-role="header">
                 <h1>Mental Math</h1>
             </div>
     
             <div data-role="content">
                 <p><a data-rel="back" href="#">Zurück</a></p>
-                <h1 id="calculus">Addieren</h1>
-                <hr>
+                <h1 id="calculus"></h1>
                 <h3 id="ausg">Aufgabe 1</h3>
-                <h2 id="task">1 + 3</h2>
-                <hr>
+                <h2 id="task"></h2>
                 <input type="number" name="number" pattern="[0-9]*" id="number-pattern" value="" placeholder="Dein Ergebnis..." class="resField">
-                <button onclick="checkResult()" style="background-color: orange;">Prüfen</button>
+                <button onclick="checkResult()" id="btnCheck">Prüfen</button>
+                <button onclick="newTask()" id="btnNext">Nächste Aufgabe</button>
             </div>
     
             <div data-role="footer" data-position="fixed">
