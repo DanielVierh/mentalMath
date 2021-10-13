@@ -23,15 +23,15 @@
            
             <h2>Spieleinstellungen</h2>
             <form>
-                <label for="txtMin">Kleinste Zahl</label>
-                <input type="number" id="txtMin" min="0" max="500" value="10"> 
-                <label for="txtMax">Größte Zahl</label>
-                <input type="number" id="txtMax" min="0" max="500" value="300">
+                <label for="txtMin">Kleinste mögliche Zahl</label>
+                <input type="number" pattern="[0-9]*" id="txtMin" min="1" max="9000" value="1"> 
+                <label for="txtMax">Größte mögliche Zahl</label>
+                <input type="number" pattern="-?[0-9]+" id="txtMax" min="1" max="9000" value="300">
             </form>
             <form>
             <fieldset data-role="controlgroup" data-type="horizontal">
                 <legend>Rechenarten:</legend>
-                <input type="checkbox" name="checkbox-h-2a" id="checkbox-h-2a" onclick="setPlus()">
+                <input type="checkbox" name="checkbox-h-2a" id="checkbox-h-2a" onclick="setPlus()" checked>
                 <label for="checkbox-h-2a">+</label>
                 <input type="checkbox" name="checkbox-h-2b" id="checkbox-h-2b" onclick="setMinus()">
                 <label for="checkbox-h-2b">-</label>
