@@ -19,9 +19,30 @@
         </div>
 
         <div data-role="content">
+
+           
+            <h2>Spieleinstellungen</h2>
+            <form>
+                <label for="txtMin">Kleinste Zahl</label>
+                <input type="number" id="txtMin" min="0" max="500" value="10"> 
+                <label for="txtMax">Größte Zahl</label>
+                <input type="number" id="txtMax" min="0" max="500" value="300">
+            </form>
+            <form>
+            <fieldset data-role="controlgroup" data-type="horizontal">
+                <legend>Rechenarten:</legend>
+                <input type="checkbox" name="checkbox-h-2a" id="checkbox-h-2a" onclick="setPlus()">
+                <label for="checkbox-h-2a">+</label>
+                <input type="checkbox" name="checkbox-h-2b" id="checkbox-h-2b" onclick="setMinus()">
+                <label for="checkbox-h-2b">-</label>
+                <input type="checkbox" name="checkbox-h-2c" id="checkbox-h-2c" onclick="setMulti()">
+                <label for="checkbox-h-2c">x</label>
+            </fieldset>
+            </form>
+            <hr> <br><br>
             <input type="text" placeholder="Dein Name..." id="txtName">
             <button id="btnStart" onclick="gotoGame()">Start</button>
-            <!-- <a href="#p4" data-transition="flip" class="ui-btn ui-cornerall" id="btnStart">Start</a> -->
+
 
         </div>
 
