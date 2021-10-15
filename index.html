@@ -28,6 +28,8 @@
                 <label for="txtMax">Größte mögliche Zahl</label>
                 <input type="number" pattern="[0-9]*" id="txtMax" min="1" max="9000" value="300">
             </form>
+            <br>
+            <!-- Rechenoperationen -->
             <form>
             <fieldset data-role="controlgroup" data-type="horizontal">
                 <legend>Rechenarten:</legend>
@@ -39,13 +41,21 @@
                 <label for="checkbox-h-2c">x</label>
             </fieldset>
             </form>
+            <br>
+            <!-- Vorauswahl anzeigen lassen -->
+            <form>
+                <label for="checkAuswahl">Auswahl aus 3 Vorschlägen:</label>
+                <input type="checkbox" name="checkAuswahl" id="checkAuswahl"></label>
+            </form>
             <hr> <br><br>
+            <!-- Name & Startbutton -->
+            <label for="txtName">Spielername:</label>
             <input type="text" placeholder="Dein Name..." id="txtName">
+            <br>
             <button id="btnStart" onclick="gotoGame()">Start</button>
 
-
         </div>
-
+        <!-- Navigationebereich -->
         <div data-role="footer" data-position="fixed">
             <div data-role="navbar">
                 <ul>
@@ -92,6 +102,12 @@
                 <h1 id="calculus"></h1>
                 <h3 id="ausg">Aufgabe 1</h3>
                 <h2 id="task"></h2>
+                <div class="cont">
+                    <button id="btnAnt1" style="color: yellow; margin-right: 3px;" onclick="takeResultFromButton(innerText)"></button>
+                    <button id="btnAnt2" style="color: yellow; margin-right: 3px;" onclick="takeResultFromButton(innerText)"></button>
+                    <button id="btnAnt3" style="color: yellow; margin-right: 3px;" onclick="takeResultFromButton(innerText)"></button>
+                    <button id="btnAnt4" style="color: yellow; margin-right: 3px;" onclick="takeResultFromButton(innerText)"></button>
+                </div>
                 <input type="number" name="number" pattern="-?[0-9]+" id="number-pattern" value="" placeholder="Dein Ergebnis..." class="resField">
                 <button onclick="checkResult()" id="btnCheck">Prüfen</button>
                 <button onclick="newTask()" id="btnNext">Los geht´s</button>
@@ -102,7 +118,6 @@
                     <ul>
                         <li><a href="#p1" data-icon="grid">Home</a></li>
                         <li><a href="#p2" data-icon="star">Highscore</a></li>
-                        <li><a href="#p3" data-icon="gear">Einstellungen</a></li>
                     </ul>
                 </div>
             </div>

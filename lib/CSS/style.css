@@ -43,3 +43,12 @@
     letter-spacing: 5px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+.cont{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btnAntw{
+    color: yellow;
+}
